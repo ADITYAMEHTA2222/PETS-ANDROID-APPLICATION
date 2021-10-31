@@ -1,0 +1,8 @@
+com/letcodetogether/petsapp/EditorActivity.java
+ com.letcodetogether.petsapp.EditorActivity
+ com.letcodetogether.petsapp.EditorActivity$1
+com/letcodetogether/petsapp/CatalogActivity.java
+ com.letcodetogether.petsapp.CatalogActivity
+ com.letcodetogether.petsapp.CatalogActivity$1
+com/letcodetogether/petsapp/BuildConfig.java
+ com.letcodetogether.petsapp.BuildConfig
