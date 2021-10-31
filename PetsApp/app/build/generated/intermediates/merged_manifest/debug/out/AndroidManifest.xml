@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.letcodetogether.petsdata"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="30" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.PetsData" >
+        <activity
+            android:name="com.letcodetogether.petsdata.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PetsData.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.letcodetogether.petsdata.EditorActivity"
+            android:label="Add a Pet"
+            android:parentActivityName="com.letcodetogether.petsdata.MainActivity"
+            android:theme="@style/EditorTheme" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <!-- <provider -->
+        <!-- android:authorities="com.letcodetogether.petsdata" -->
+        <!-- android:grantUriPermissions="true" -->
+        <!-- android:readPermission="com.letcodetogether.petsdata.READ" -->
+        <!-- android:writePermission="com.letcodetogether.petsdata.WRITE" -->
+        <!-- android:exported="false" -->
+        <!-- android:name=".PetProvider" /> -->
+
+    </application>
+
+</manifest>
